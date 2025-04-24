@@ -1,7 +1,7 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('module-Article_Item'); ?>>
+<article id="<?php echo 'post-' . get_the_ID(); ?>" <?php post_class('module-Article_Item'); ?>>
                             <a href="<?php the_permalink(); ?>" class="module-Article_Item_Link">
                                 <div class="module-Article_Item_Img">
-                                    <?php if (has_post_thumbnail()): ?>
+                                    <?php if (has_post_thumbnail() ): ?>
                                         <?php the_post_thumbnail('archive_thumbnail'); ?>
                                     <?php else: ?>
                                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/dummy-image.png" alt="" width="200" height="150" load="lazy">
