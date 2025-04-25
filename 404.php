@@ -11,7 +11,7 @@
                             </header>
                             <div class="content-Body">
                                 <p>お探しのページは、移動もしくは削除された可能性があります。<br>
-                                    サイト内検索、もしくは<a href="<?php echo esc_url( home_url(); ?>">トップページ</a>よりお探しください。</p>
+                                    サイト内検索、もしくは<a href="<?php echo esc_url( home_url()); ?>">トップページ</a>よりお探しください。</p>
                                     <?php get_search_form(); ?>
                             </div>
                         </article>
